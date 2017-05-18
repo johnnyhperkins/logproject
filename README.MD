@@ -1,10 +1,10 @@
-#The purpose of this code
+# The purpose of this code
 logproject.py queries the 'news' database (which is made up of 3 tables: articles, authors, and log) to answer 3 questions: 
 1. What are the most popular three articles of all time? 
 2. Who are the most popular article authors of all time?
 3. On which days did more than 1% of requests lead to errors? 
 
-#How to run logproject.py
+# How to run logproject.py
 1. Download the file into a folder in vagrant
 2. Download the newsdata.sql file
 3. ssh into vagrant and manually create the database 'news' 
