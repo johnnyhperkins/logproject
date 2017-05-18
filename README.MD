@@ -11,7 +11,8 @@ logproject.py queries the 'news' database (which is made up of 3 tables: article
 4. Run `psql -d news -f newsdata.sql` to populate the database with the three tables
 5. Create the following views:
 
-```CREATE VIEW statusok AS
+```
+CREATE VIEW statusok AS
 SELECT * FROM log 
 WHERE status NOT LIKE '404 NOT FOUND' 
 AND path LIKE '%/article/%';
@@ -57,6 +58,7 @@ ORDER BY errors desc;
 CREATE VIEW errorresults AS 
 SELECT errors.time, errors/okays AS result 
 FROM errors LEFT JOIN ok 
-ON errors.time = ok.time;```
+ON errors.time = ok.time;
+```
 
 6. Navigate to the folder where you downloaded logproject.py and run the file
